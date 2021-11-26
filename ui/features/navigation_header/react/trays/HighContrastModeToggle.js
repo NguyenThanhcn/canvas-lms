@@ -136,14 +136,14 @@ export default function HighContrastModeToggle({isMobile}) {
   return (
     <ApplyTheme theme={hcmOverrides}>
       <View as="div" margin={margins}>
-        <Checkbox
+        {/* <Checkbox
           variant="toggle"
           size="small"
           label={<HighContrastLabel loading={loading} isMobile={isMobile} />}
           checked={enabled}
           readOnly={loading}
           onChange={toggleHiContrast}
-        />
+        /> */}
         {changed && (
           <Text size="small">
             {I18n.t('Reload the page or navigate to a new page for this change to take effect.')}
