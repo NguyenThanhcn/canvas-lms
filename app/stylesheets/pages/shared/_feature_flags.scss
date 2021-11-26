@@ -197,3 +197,12 @@ $switch-text: rgba($ic-color-light, 0.8);
     text-align: direction(right);
   }
 }
+
+.feature-flag {
+  .high_contrast {
+    display: none;
+  }
+  #high_contrast-details {
+    display: none !important;
+  }
+}
