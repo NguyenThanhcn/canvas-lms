@@ -21,6 +21,7 @@
 <% extend Api::V1::Account %>
 
   <div class="mobileLogin-Header">
+    <%= image_tag(brand_variable("ic-brand-Login-logo"), :alt => alt_text_for_login_logo) %>
     <span class="screenreader-only">
       <%= t 'Canvas by Instructure' %>
       <script type="text/javascript">
