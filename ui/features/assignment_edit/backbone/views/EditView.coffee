@@ -1144,4 +1144,5 @@ export default class EditView extends ValidatedFormView
       locked: !!@lockedItems.settings
     }
     mountPoint = document.querySelector('#allowed-attempts-target')
-    ReactDOM.render(React.createElement(AllowedAttemptsWithState, props), mountPoint)
+    if mountPoint
+      ReactDOM.render(React.createElement(AllowedAttemptsWithState, props), mountPoint)
