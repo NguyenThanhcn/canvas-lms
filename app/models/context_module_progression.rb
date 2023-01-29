@@ -21,6 +21,8 @@
 class ContextModuleProgression < ActiveRecord::Base
   include Workflow
 
+  self.primary_key = "id"
+
   belongs_to :context_module
   belongs_to :user
   belongs_to :root_account, class_name: "Account"

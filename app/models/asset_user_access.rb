@@ -24,6 +24,8 @@
 class AssetUserAccess < ActiveRecord::Base
   extend RootAccountResolver
 
+  self.primary_key = "id"
+
   belongs_to :context, polymorphic: %i[account course group user], polymorphic_prefix: true
   belongs_to :user
   has_many :page_views
