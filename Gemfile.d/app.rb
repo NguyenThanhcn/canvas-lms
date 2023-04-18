@@ -27,6 +27,7 @@ def gem_override(name, version)
   end
 end
 
+gem "turnout"
 gem "bootsnap", "1.13.0", require: false
 gem "rails", CANVAS_RAILS == "6.1" ? "6.1.4.6" : "7.0.3"
   gem "tzinfo", "2.0.4"
